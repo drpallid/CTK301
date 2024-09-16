@@ -1,0 +1,49 @@
+/*blue sky class*/
+    .bluesky{
+        background-color:rgb(127, 156, 238);
+    }
+
+/*white class*/
+    .white{
+        color:white;
+    }
+/*yellow class*/
+    .yellow {
+        background-color: yellow;
+    }
+
+/*blue class*/
+    .blue{
+        color: blue;
+    }
+
+/*green class*/
+    .green{
+        color: yellow;
+        background-color: darkgreen;
+    }
+/*green id*/
+    #greenid{
+        background-color:rgba(0, 128, 0, 0.5);
+    }
+
+/*red class*/
+    .red{
+        color: red;
+    }
+
+/*span style class*/
+    .spanstyle {
+        color: orange;
+        font-weight: bold;
+    }
+    
+/*link*/
+    a{
+        color:green;
+        text-decoration: none;
+    }
+    a:hover{
+        color:red;
+        text-decoration: underline;
+    }
