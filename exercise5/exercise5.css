@@ -1,0 +1,22 @@
+/*nav */
+    nav ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    nav li{
+        border: 1px solid #000000;
+        width: 200px;
+        margin-right: 10px;
+        background-color: red;
+        display: inline-block;
+    }
+    nav li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+    nav li a:hover{
+        background-color: maroon;
+    }
