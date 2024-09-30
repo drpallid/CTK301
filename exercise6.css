@@ -1,0 +1,66 @@
+/*body*/
+  body{
+    background-color: grey;
+  }
+
+/*wrapper*/
+  #wrapper{
+    margin: 1em auto;
+    padding: 0;
+    width: 960px;
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+/*hader*/
+  header {
+    grid-column: span 6;
+    background-color: red;
+    padding-left: 1em;
+  }
+
+/*nav*/
+  nav {
+    grid-column: span ;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+  }
+  nav li a {
+    display: block;
+    background-color: red;
+    border: 1px solid black;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+  }
+/*bob*/
+  #bob{
+    float:right;
+    margin-left: 1em;
+  }
+
+/*main*/
+  main {
+    grid-column:span 4;
+    padding: 0 1em 0 1em;
+  }
+
+/*aside*/  
+aside {
+  background-color: #3366FF;
+  padding: 1em;
+  color: white;
+}
+
+/*footer*/
+footer {
+  grid-column: span 6;
+  background-color: #229933;
+}
