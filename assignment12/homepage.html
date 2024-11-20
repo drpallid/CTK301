@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daytona's Portfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="portfolio.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a class="active" href="homepage.html">HOMEPAGE</a></li>
+        <li><a href="gamedesignpage.html">GAME DESIGN</a></li>
+        <li><a href="artpage.html">ARTWORK</a></li>
+        <li><a href="sounddesignpage.html">SOUND DESIGN</a></li>
+    </ul>
+</nav>
+
+    <div id="wrapper">
+<header>
+    <h1><a href="homepage.html">DAYTONA'S PORTFOLIO</a></h1>
+</header>
+
+<div class="blue">
+    <h2 class="standard">About me!</h2>
+</div>
+<aside>
+        <p>My name is Daytona Howard. I
+            like to draw and make art out of clay. I also enjoy playing video games, web design, and music. My favorite game is Terraria and my favorite animals are sturgeon. I currently am enrolled at Illinois State University, and am a Creative Technologies major. I have two pretty cats, one is named Tupac (after the rapper), and the other is named Biggie (also after the rapper). Some music that I like listening to is Will Wood and the Tapeworms, MCR, and Tally Hall. I'm currently watching House MD.</p>    
+    <h2 class="standard2">Showcase of my work!</h2>   
+       
+</aside>
+
+     <img class="floatimageright" src="me.jpeg" alt="Image of me">  
+     
+     
+<!--I want to use a carousel for this-->
+<main class="main3">
+<div id="myCarousel" class="f-carousel">
+    <div class="f-carousel__slide">
+            <img class="floatimageleft" src="talk.png" alt="Shop in King Dom">
+            <p class ="box box3">This image shows off a shop menu featuring a character from my game "King Dom", you can see more for this game by going to <a href="gamedesignpage.html" target="#">the game design page.</a></p>
+    </div>
+
+    <div class="f-carousel__slide">
+            <img class="floatimageleft" src="StarrySturgeon.jpg" alt="Starry Sturgeon boss added to Terraria">
+            <p class ="box box3">This piece features a bit of the things I like, and shows off my pixel art skills! You can learn more about it by going to <a href="artpage.html" target="#">the art page.</a></p>
+    </div>
+
+    <div class="f-carousel__slide">
+        <audio class="audio2" controls autoplay >
+            <source src="Underscore2.wav" type="audio/mpeg">
+        </audio>
+        <p class ="box box3">This is an audio created for my sound design class. It features Jerma985 with menacing music and a police siren getting closer, you can listne to more by going to <a href="sounddesign.html" target="#">the sound design page.</a></p>
+    </div>
+</div>
+</main>
+
+</div>
+<footer>
+    <p class="green"><a href= "https://docs.google.com/forms/d/e/1FAIpQLSe-PKfZhpa0JPlCueymCS_vppTXyUN6ahHsStGKR5mq6S1gNQ/viewform?usp=sf_link" target="_blank">Contact form</a></p>
+        
+    <div class="margin"> 
+        <a class="bi bi-github" href="https://github.com/drpallid" target="_blank"></a> <a class="bi bi-instagram" href="https://www.instagram.com/zenikiales/" target="_blank"></a>
+    </div>
+</footer>
+
+    <script>   
+        Fancybox.bind("[data-fancybox]", {});
+
+        const container = document.getElementById("myCarousel");
+        const options = { infinite: true };
+
+        new Carousel(container, options);
+    </script>
+</body>
+</html>
