@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="portfolio.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="homepage.html">HOMEPAGE</a></li>
+        <li><a href="gamedesignpage.html">GAME DESIGN</a></li>
+        <li><a class="active" href="artpage.html">ARTWORK</a></li>
+        <li><a href="sounddesignpage.html">SOUND DESIGN</a></li>
+    </ul>
+</nav>
+
+    <div id="wrapper">
+<header>
+    <h1><a href="homepage.html">DAYTONA'S PORTFOLIO</a></h1>
+</header>
+
+
+    <h2 class="standard4">Past Art</h2>
+    <h2 class="standard4">Recent Art</h2>
+
+<div class="section1">
+    <a href="StarrySturgeon.jpg" data-fancybox="gallery" data-caption="(2023) This is a piece I did for one of my classes. I created a sprite sheet for a starry sturgeon themed boss, and then added it to a screenshot of Terraria. I love sturgeons and Terraria, so this piece is extra special for me.">
+        <img class="image3" src="StarrySturgeon.jpg" alt="Starry Sturgeon boss added to Terraria"></a>
+    <a href="jerma.jpg" data-fancybox="gallery" data-caption="(2024) This is a drawing of the streamer Jerma985, he is a very special guy for me, and has made lots of content I love to look back on. This piece has a whole bunch of references to commemorate him (he's retiring).">
+        <img class="image3" src="jerma.jpg" alt="Jerma drawing"></a>
+    <a href="medrawing.jpg" data-fancybox="gallery" data-caption="(2024) This is a drawing of me in my Halloween costume. I drew it before actually buying all of the supplies so create the look, and I quite enjoyed it.">
+        <img class="image3" src="medrawing.jpg" alt="Drawing of me"></a>
+</div>
+<div class="section1">
+    <a href="ratpainting.jpg" data-fancybox="gallery" data-caption="(2023) Painting of rats I did for a class, we had to create a fake person and then make art that they would make. This was made by a 15 year old from Ireland who includes rats in their art, and every week completes a piece representing how they felt/what they did that week.">
+        <img class="image3" src="ratpainting.jpg" alt="Painting of rats"></a>
+    <a href="sturgeonpainting.jpg" data-fancybox="gallery" data-caption="(2024) This is a painting of an Alabama Sturgeon, you may start seeing a pattern that is my love for fish (specificall sturgeon).">
+        <img class="image3" src="sturgeonpainting.jpg" 
+    alt="Painting of a sturgeon"></a>
+    <a href="fish.jpg" data-fancybox="gallery" data-caption="(2024) Collection of clay fish I have made, I started making a bunch of them with the intention to sell them on Etsy, but I haven't gotten around to it since I don't know how. I make colorful fish, characters, real fish, etc.">
+        <img class="image3" src="fish.jpg" alt="Fish made from clay"></a>
+</div>
+<div class="section1">
+    <a href="alligators.jpg" data-fancybox="gallery" data-caption="(2023) Wood burning piece featuring two alligators in combat, I made it in highschool. This piece symbolizes me and my father.">
+        <img class="image3" src="alligators.jpg" alt="Alligator wood burning piece"></a>
+    <a href="sturgeondrawing.jpg" data-fancybox="gallery" data-caption="(2024) Drawing of sturgeon using colored pencils, specifically Green Sturgeon (a type of sturgeon, not just the color I drew them in ha!). I included this because I wanted to show an example of my sketchbook pages.">
+        <img class="image3" src="sturgeondrawing.jpg" alt="Drawing of sturgeon"></a>
+    <a href="lethalco.jpg" data-fancybox="gallery" data-caption="(2024) Digital piece featuring a redrawing of a screenshot from the game Lethal Company. I never finished it, but I'm still happy with it.">
+        <img class="image3" src="lethalco.jpg" alt="Lethal Company drawing"></a>
+</div>
+
+
+</div>
+<footer>
+    <p class="green"><a href= "https://docs.google.com/forms/d/e/1FAIpQLSe-PKfZhpa0JPlCueymCS_vppTXyUN6ahHsStGKR5mq6S1gNQ/viewform?usp=sf_link" target="_blank">Contact form</a></p>
+        
+    <div class="margin"> 
+        <a class="bi bi-github" href="https://github.com/drpallid" target="_blank"></a> <a class="bi bi-instagram" href="https://www.instagram.com/zenikiales/" target="_blank"></a>
+    </div>
+</footer>
+
+    <script>   
+        Fancybox.bind("[data-fancybox]", {});
+
+        const container = document.getElementById("myCarousel");
+        const options = { infinite: false };
+
+        new Carousel(container, options);
+    </script>
+</body>
+</html>
