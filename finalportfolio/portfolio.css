@@ -1,0 +1,412 @@
+/*variables!*/
+    *{
+        --neongreen: #00FF00;
+        --green: #00bb00;
+        --darkgreen: #005500;
+        --transition: all 0.5s;
+        --full: span 12;
+        --white: #FFFFFF;
+        --black: #000000;
+    }
+
+/*body*/
+    body{
+        background-image: url(gradient2.png), url(gradient.png);
+        background-position: top, bottom;
+        background-repeat: repeat-x, repeat-x;
+        background-color: var(--black);
+    }
+
+/*wrapper id*/
+    #wrapper{
+        margin: 1em auto;
+        width: 960px;
+        /*temporary border border: 5px solid green;*/
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+/*google fonts*/
+    .blaka-hollow-regular {
+        font-family: "Blaka Hollow", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+/*header*/
+    header{
+        grid-column: var(--full);
+    }
+    h1{
+        text-align: center;
+        font-family: "Blaka Hollow" , system-ui;
+        margin: 100px 0px 20px 0px;
+        font-size: 100px;
+        text-shadow: -3px -3px 0 var(--darkgreen), 3px -3px 0 var(--darkgreen), -3px 3px 0 var(--darkgreen), 3px 3px 0 var(--darkgreen);
+    }
+    h1 a{
+        color: var(--white);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+    h1 a:hover{
+        text-shadow: -3px -3px 0 var(--green), 3px -3px 0 var(--green), -3px 3px 0 var(--green), 3px 3px 0 var(--green);
+    }
+    h2{
+        color: var(--white);
+    }
+    
+/*nav*/
+    nav{
+        position: fixed;
+        z-index: 9;
+        grid-column: var(--full);
+        width: 99%;
+        margin: 0px 30px 0px 0px;
+        background-color: #00000080;
+        border-radius: 20px;
+    }
+    nav ul{
+        margin: 0px;
+        padding: 10px;
+    }
+    nav li{
+        padding-right: 15px;
+        list-style-type: none;
+        display: inline-block;
+    }
+    nav li a{
+        color: var(--white);
+        font-size: x-large;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        background-color: #003300;
+        border-radius: 20px;
+        text-align: center;
+        transition: var(--transition);
+    }
+    nav li a.active{
+        background-color: var(--green);
+        font-size: 26px;
+    }
+    nav li a:hover:not(.active){
+        background-color: var(--green);
+        font-size: 26px;
+    }
+
+/*standard class*/
+    .standard{
+        grid-column: span 8;
+        background-color:var(--darkgreen);
+        border-radius: 20px;
+        width: fit-content; height: fit-content;
+        margin: 0px 0px 10px 170px;
+        padding: 10px;
+    }
+    .standard2{
+        text-align: center;
+        font-size: x-large;
+        background-color: var(--darkgreen);
+        border-radius: 20px;
+        margin: 70px 0px 0px 250px;
+        padding: 10px 5px;
+        width: 300px;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0px 5px #00330073;
+    }
+    .standard3{
+        grid-column: var(--full);
+        margin-left: 400px;
+    }
+    .standard4{
+        grid-column: span 6;
+        background-color:var(--darkgreen);
+        border-radius: 20px;
+        width: fit-content; height: fit-content;
+        margin: 0px 0px 10px 80px;
+        padding: 10px;
+    }
+
+/*aside*/
+    aside{
+        background-color: var(--darkgreen);
+        color: var(--white);
+        font-size: x-large;
+        word-spacing: 5px;
+        grid-column: span 8;
+        border-radius: 20px;
+        width: 350px; height: 515px;
+        margin: 0px 0px 0px 50px;
+        padding: 0px 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .blue{
+        grid-column: span 8;
+    }
+    aside p{
+        margin-top: 15px; padding-right: 0px;
+    }
+
+/*game design class*/
+    .gamedesign{
+        background-color: var(--darkgreen);
+        font-size: x-large; color: var(--white);
+        word-spacing: 5px;
+        grid-column: span 5;
+        border-radius: 20px;
+        width: 315px; height: fit-content;
+        margin: 0px 0px 40px 82px;
+        padding: 0px 20px;
+    }
+    .sounddesign{
+        background-color: var(--darkgreen);
+        font-size: x-large; color: var(--white);
+        word-spacing: 5px;
+        grid-column: span 6;
+        border-radius: 20px;
+        width: 80%; height: fit-content;
+        margin: 0px 0px 10px 30px;
+        padding: 0px 20px 0px 20px;
+    }
+    .sounddesign2{
+        grid-column: var(--full);
+        margin-left: 25%; 
+        width: 450px;
+    }
+
+/*section classes*/
+    .section1{
+        grid-column: var(--full);
+        margin-left: 40px; margin-bottom: 15px;
+    }
+    .section2{
+        grid-column: var(--full);
+        margin-left: 0px; margin-bottom: 10px; margin-top: 30px;
+    }
+    .section3{
+        grid-column: var(--full);
+        margin-left: 23%; margin-bottom: 10px; margin-top: 10px;
+    }
+
+/*video*/
+    iframe{
+        margin-left: 100px; 
+        width: 320px; height:180px;
+        border: var(--darkgreen) solid 3px;
+        border-radius: 20px;
+        transition: var(--transition);
+    }
+    iframe:hover{
+        border: var(--neongreen) solid 3px;
+    }
+    
+
+
+/*audio*/
+    audio{
+        margin-left: 105px; 
+        margin-right: 25px;
+        border: var(--darkgreen) solid 3px;
+        border-radius: 50px;
+        transition: var(--transition);
+    }
+    audio:hover{
+        border: var(--neongreen) solid 3px;
+    }
+    .audio2{
+        float: left;
+        margin: 80px 0px 0px 100px;
+    }
+
+/*main*/
+    main{
+        grid-column: var(--full);
+        padding: 50px 20px;
+        margin: 50px 20px 0px 20px;
+        color: var(--white);
+        background-color: var(--green);
+        border: var(--white) solid 3px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+    }
+    .main2{
+        margin: 0px;
+    }
+    .main3{
+        padding: 30px 0px 10px 0px;
+    }
+    .main4{
+        margin: 10px 0px 30px 0px;
+        padding: 30px 15px 30px 15px;
+    }
+    .main5{
+        margin-top: 20px;
+        padding-top: 15px; padding-bottom: 15px;
+    }
+
+/*box class*/
+    .box{
+        width: 350px;
+        font-size: x-large;
+        margin: 40px 0px 0px 430px;
+        text-align: center;
+        background-color: var(--darkgreen);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0px 5px #00330073;
+    }
+    .box a{
+        color: var(--green); text-decoration:none;
+        transition: var(--transition);
+    }
+    .box a:hover{
+        color: var(--neongreen); 
+    }
+    .box2{
+        width: 94%;
+        margin-left: 15px; margin-top: 0px; margin-bottom: 10px; margin-right: 5px;
+        padding: 10px;
+    }
+    .box2 p{
+        padding: 0px; margin: 0px;
+    }
+    .box3{
+        margin-left: 450px; margin-top: 10px;
+    }
+    .box4{
+        margin-left: 540px; margin-top: 0px;
+        width: 360px;
+    }
+    .box5{
+        margin-left: 35.5%; margin-top: 0px; margin-bottom: 10px; margin-right: 5px;
+        padding: 10px;
+        width: fit-content;
+    }
+
+/*float image*/
+    .floatimageright{
+        width: 400px;
+        margin: 50px 0px 0px 20%;
+        border: var(--white) solid 3px;
+        border-radius: 300px;
+    }
+    .floatimageleft{
+        float: left;
+        width: 350px;
+        margin-left: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 5px #00330073;
+        filter: brightness(1.5);
+        }
+    .image{
+        grid-column: span 6;
+        position: relative;
+        margin: 20px 10px 10px 11%;
+        padding: 0px;
+        width: 330px;
+        border: var(--white) solid 3px;
+        border-radius: 20px;
+    }
+    .image2{
+        margin: 4px;
+        width: 276px; height: 300px; object-fit: cover;
+        border: #00000082 solid 3px;
+        border-radius: 20px;
+        box-shadow: 0px 5px #00330073;
+        transition: var(--transition);
+    }
+    .image2:hover{
+        border: var(--neongreen) solid 3px;
+    }
+    .image3{
+        width: 272px; height: 250px; object-fit: cover;
+        margin-left: 10px;
+        border: var(--darkgreen) solid 3px;
+        border-radius: 20px;
+        transition: var(--transition);
+    }
+    .image3:hover{
+        border: var(--neongreen) solid 3px;
+    }
+    .image4{
+        width: 320px;
+        margin-left: 100px;
+        border: var(--white) solid 3px;
+        border-radius: 20px;
+    }
+    .image5{
+        width: 500px;
+        margin-left: 15px;
+    }
+
+/*fancybox*/ 
+
+/*carousel*/
+    #myCarousel {
+        margin-bottom: 24px;
+    }
+    #myCarousel .f-carousel__slide {
+        text-align: center;
+        padding: 24px 24px 0px 24px;
+    }
+
+    .f-carousel {
+        --f-button-width: 38px;
+        --f-button-height: 38px;
+      
+        --f-button-svg-width: 16px;
+        --f-button-svg-height: 16px;
+        --f-button-svg-stroke-width: 2.5;
+      
+        --f-button-color: var(--green);
+        --f-button-border-radius: 50%;
+        --f-button-shadow: 0px 5px #00330073;
+        
+      
+        --f-button-bg: var(--white);
+        --f-button-hover-color: var(--darkgreen);
+        --f-button-hover-bg: var(--neongreen);
+        --f-button-active-bg: var(--neongreen);--f-button-transition: var(--transition);
+      }
+
+/*footer*/
+    footer{
+        grid-column: var(--full);
+        color: var(--white);
+        margin: 30px 0px 0px 0px;
+        background-color: #00000080;
+        border-radius: 20px;
+        display: flex;
+    }
+    footer p{
+        padding-left: 10px;
+    }
+    footer a{
+        color: var(--green);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+    footer a:hover{
+        color: var(--neongreen);
+    }
+    .margin{
+        text-align: right;
+        width: 50%;
+        font-size: xx-large; color: var(--white);
+        padding: 30px 20px 0px 0px;
+    }
+    .margin a:hover{
+        color: var(--neongreen);
+    }
+    .green{
+        width: 50%;
+        padding-left: 20px;
+        font-family: "Blaka Hollow", system-ui; font-size: xx-large;
+        letter-spacing: 3px;
+    }
